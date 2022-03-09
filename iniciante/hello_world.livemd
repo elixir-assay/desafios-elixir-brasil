@@ -1,0 +1,30 @@
+# Olá, mundo!
+
+## Desafio
+
+Faça com que a função `Challenge.hello_world/0` retorne o valor `"Hello World!"`
+
+```elixir
+defmodule Challenge do
+  @spec hello_world :: String.t()
+  def hello_world do
+    # TODO
+  end
+end
+```
+
+## Testes
+
+```elixir
+ExUnit.start(autorun: false)
+
+defmodule ChallengeTest do
+  use ExUnit.Case
+
+  test ~s(hello_world/0 retorna "Hello World!") do
+    assert Challenge.hello_world() == "Hello World!"
+  end
+end
+
+ExUnit.run()
+```
