@@ -1,0 +1,72 @@
+# Soma
+
+## Desafio
+
+Crie a função `Arithmetic.sum/2` que recebe 2 números inteiros e retorna o resultado da soma entre eles.
+
+```elixir
+defmodule Arithmetic do
+  # TODO
+end
+
+:ok
+```
+
+<!-- livebook:{"branch_parent_index":0} -->
+
+## Playground
+
+Utilize esta seção para experimentar sua solução!
+
+```elixir
+Arithmetic.sum(20, 22)
+```
+
+```elixir
+Arithmetic.sum(-200, 300)
+```
+
+```elixir
+Arithmetic.sum(10, -11)
+```
+
+<!-- livebook:{"branch_parent_index":0} -->
+
+## Testes
+
+Execute o bloco abaixo para testar sua solução:
+
+```elixir
+"ZGVmbW9kdWxlIFNvbHV0aW9uIGRvCiAgZGVmbW9kdWxlIEFyaXRobWV0aWMgZG8KICAgIGRlZiBzdW0oeCwgeSksIGRvOiB4ICsgeQogIGVuZAoKICBkZWYgdGVzdF9zdHJlYW0gZG8KICAgIC0xMDAuLjIwMC8vMwogICAgfD4gU3RyZWFtLnppcCgxMDAuLi0xMDAvLy0yKQogICAgfD4gU3RyZWFtLm1hcChmbiB7eCwgeX0gLT4gJXt4OiB4LCB5OiB5LCBzb2x1dGlvbjogQXJpdGhtZXRpYy5zdW0oeCwgeSl9IGVuZCkKICBlbmQKZW5kCg=="
+|> Base.decode64!()
+|> Code.compile_string()
+
+ExUnit.start(autorun: false)
+
+defmodule ArithmeticTest do
+  use ExUnit.Case
+
+  describe "sum/2" do
+    test "realiza a soma de 20 e 22" do
+      assert Arithmetic.sum(20, 22) == 42
+    end
+
+    test "realiza a soma de -200 e 300" do
+      assert Arithmetic.sum(-200, 300) == 100
+    end
+
+    test "realiza a soma de 10 e -11" do
+      assert Arithmetic.sum(10, -11) == -1
+    end
+
+    test "realiza a soma de dois números inteiros" do
+      Enum.each(
+        Solution.test_stream(),
+        &assert(Arithmetic.sum(&1.x, &1.y) == &1.solution)
+      )
+    end
+  end
+end
+
+ExUnit.run()
+```

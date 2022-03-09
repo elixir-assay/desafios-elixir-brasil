@@ -7,16 +7,17 @@ Desafios para a comunidade brasileira, mantida pela comunidade
 
 ## Passo-a-passo
 
-1. Tenha um [Livebook](https://livebook.dev/) em execução
-2. Importe o desafio desejado no seu Livebook:
-  - Copie o endereço para o desafio, por exemplo: [Olá, mundo!](iniciante/hello_world.livemd)
-  - Na página inicial do livebook, clique em `Import` situado no campo superior direito
+- Tenha um [Livebook](https://livebook.dev/) em execução
+- Importe o desafio desejado no seu Livebook:
+  - Copie o endereço do desafio, por exemplo: [Olá, mundo!](iniciante/ola_mundo.livemd)
+  - Na página inicial do livebook, clique em `Import` situado no canto superior direito
   - Na primeira aba (`From URL`), cole endereço do desafio
   - Clique no botão `Import`
-3. Siga as instruções do desafio!
+- Siga as instruções do desafio!
 
 ## Catálogo
 
 ### Iniciante
 
-- [Olá, mundo!](iniciante/hello_world.livemd)
+1. [Olá, mundo!](iniciante/ola_mundo.livemd)
+1. [Soma](iniciante/soma.livemd)

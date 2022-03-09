@@ -1,0 +1,46 @@
+# Olá, mundo!
+
+## Desafio
+
+Faça com que a função `Greeter.hello_world/0` retorne o valor `"Hello World!"`.
+
+```elixir
+defmodule Greeter do
+  @spec hello_world :: String.t()
+  def hello_world do
+    # TODO
+  end
+end
+
+:ok
+```
+
+<!-- livebook:{"branch_parent_index":0} -->
+
+## Playground
+
+Utilize esta seção para experimentar sua solução!
+
+```elixir
+Greeter.hello_world()
+```
+
+<!-- livebook:{"branch_parent_index":0} -->
+
+## Testes
+
+Execute o bloco abaixo para testar sua solução:
+
+```elixir
+ExUnit.start(autorun: false)
+
+defmodule GreeterTest do
+  use ExUnit.Case
+
+  test ~s(hello_world/0 retorna "Hello World!") do
+    assert Greeter.hello_world() == "Hello World!"
+  end
+end
+
+ExUnit.run()
+```
